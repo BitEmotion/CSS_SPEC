@@ -1,4 +1,4 @@
-### VisualFormatingmModel
+### VisualFormatingModel
 
 문서를 처리하거나 시각 매체에서 나타내는데 사용되는 알고리즘
 
