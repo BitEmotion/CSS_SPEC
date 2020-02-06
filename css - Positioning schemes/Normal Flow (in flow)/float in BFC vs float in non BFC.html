@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            .float {
+                float: left;
+            }
+            .BFC {
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="BFC" style="width:300px;">
+            <span>1</span>
+            <span>2</span>
+            <div class="float">normal flow는 in flow와 out of flow 두가지가 있습니다. float는 normal flow의 in flow가 아닌 out of flow입니다.</div>1
+        </div>
+        
+        <div style="width:300px;">
+            <span>8</span>
+            <span>9</span>
+            <div class="float">normal flow는 in flow와 out of flow 두가지가 있습니다. float는 normal flow의 in flow가 아닌 out of flow입니다.</div>1
+        </div>
+
+        <div style="width:300px;">
+            <span>여기는 BFC 안이 아닙니다. 당신은 어디에 소속 되어 있나요?</span>
+            <div class="float">normal flow는 in flow와 out of flow 두가지가 있습니다. float는 normal flow의 in flow가 아닌 out of flow입니다.</div>1
+        </div>
+    </body>
+</html>

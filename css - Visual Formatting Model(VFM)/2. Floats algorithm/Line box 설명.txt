@@ -1,0 +1,4 @@
+float는 normal flow에서 벗어나서 line box로 그려진다.
+float는 새로운 BFC를 그린다. 
+float는 IFC의 인라인 요소에 영향을 미친다.
+	IFC가 인라인 요소를 그릴 때 가드로 작동한다.

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            .BFC {
+                overflow: auto;
+                border: 5px dotted rgb(214,129,137); 
+                 border-radius: 5px;
+            }
+            .div {
+                border-radius: 5px; 
+                margin: 10px 0;
+                background-color: rgb(214,129,137);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="BFC">
+            <div class="div"> Sibling 1</div>
+            <div class="BFC"> 
+               <div class="div"> Sibling 2 </div>
+            </div>
+        </div>
+        <div class="BFC">
+            <div class="div"> Sibling 1</div>
+            <div class="div"> Sibling 2</div>
+            <div> 
+               <div class="div"> Sibling 3 </div>
+            </div>
+        </div>
+    </body>
+</html>

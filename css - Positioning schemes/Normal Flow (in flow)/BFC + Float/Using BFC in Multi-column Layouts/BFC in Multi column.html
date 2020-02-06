@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            .BFC {
+                overflow: auto;
+            }
+            .container {
+                min-height: 200px;
+            }
+            .column {
+                width: 31.33%;
+                background-color: rgb(214,129,137); 
+                float: left;
+                min-height: 100px;
+                margin: 0 1%;
+            }
+            .column:last-child {
+                float: none;
+            }
+            .div {
+                border-radius: 5px; 
+                margin: 10px 0;
+                background-color: rgb(214,129,137);
+            }
+            .float {
+                float: left;
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">column 1</div>
+            <div class="column">column 2</div>
+            <!-- <div class="column BFC">column 3</div> -->
+        </div>
+    </body>
+</html>

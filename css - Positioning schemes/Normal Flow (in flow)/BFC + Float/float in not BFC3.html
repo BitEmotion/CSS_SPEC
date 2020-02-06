@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            .float {
+                float: left;
+                border: 5px solid rgba(214,129,137,.4);
+                border-radius: 5px;
+                background-color: rgba(233,78,119,.4);
+                color: #fff;
+            }
+            .BFC {
+                overflow: auto;
+            }
+            .div {
+                border: 5px dotted rgb(214,129,137);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:300px;" class="div">
+            8
+            <span>8</span>
+            <span>여기는 BFC 안이 아닙니다. </span>
+            <div class="float">normal flow는 in flow와 out of flow 두가지가 있습니다. float는 normal flow의 in flow가 아닌 out of flow입니다.</div>1
+        </div>
+    </body>
+</html>
